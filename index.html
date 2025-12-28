@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Grosir Legging Murah di Depok — Jo Ondoh</title>
+<title>Grosir Legging Murah di Depok — Ondoh Store</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -18,9 +18,6 @@ h2{text-align:center;color:var(--blue);margin-bottom:40px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
 .card{background:var(--gray);padding:20px;border-radius:18px;text-align:center;}
 .card img{max-width:100%;border-radius:12px;}
-.hidden{display:none;}
-.filter{text-align:center;margin-bottom:30px;}
-select{padding:10px 15px;border-radius:20px;border:1px solid #ccc;}
 footer{background:var(--dark);color:#fff;text-align:center;padding:30px;}
 .floating-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 22px;border-radius:50px;text-decoration:none;font-weight:600;}
 </style>
@@ -28,9 +25,8 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px;}
 
 <body>
 
-<!-- LANDING -->
-<header id="home">
-  <div class="logo">Jo Ondoh</div>
+<header>
+  <div class="logo">Ondoh Store</div>
   <h1>Grosir Legging Murah di Depok</h1>
   <p>Cocok untuk reseller, dropshipper, dan pemakaian harian</p>
   <a href="#shop" class="btn">Lihat Produk</a>
@@ -42,121 +38,4 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px;}
     <div class="card">Harga Grosir</div>
     <div class="card">Kualitas Premium</div>
     <div class="card">Ready Stock</div>
-    <div class="card">Kirim Cepat</div>
-  </div>
-</section>
-
-<!-- SHOP -->
-<section id="shop">
-  <h2>Shop Produk</h2>
-
-  <div class="filter">
-    <select onchange="filterProduk(this.value)">
-      <option value="all">Semua</option>
-      <option value="standar">Standar</option>
-      <option value="7/8">7/8</option>
-      <option value="jumbo">Jumbo</option>
-      <option value="anak">Anak</option>
-    </select>
-  </div>
-
-  <div class="grid">
-    <div class="card" data-cat="standar">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-li7gic8ln2ij11@resize_w900_nl.webp">
-      <h3>Legging Kaos Standar</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging Kaos Standar','Rp24.000 / pcs')">Lihat Detail</a>
-    </div>
-
-    <div class="card" data-cat="standar">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-li6d09x8a7xfe4.webp">
-      <h3>Legging Panjang Standar</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging Panjang Standar','Rp21.000 / pcs')">Lihat Detail</a>
-    </div>
-
-    <div class="card" data-cat="7/8">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul0-li7gic8loh2z23.webp">
-      <h3>Legging 7/8</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging 7/8','Rp21.000 / pcs')">Lihat Detail</a>
-    </div>
-
-    <div class="card" data-cat="jumbo">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7qukz-li7bvwqxf8uu3c@resize_w900_nl.webp">
-      <h3>Legging Kaos Jumbo</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging Kaos Jumbo','Rp28.000 / pcs')">Lihat Detail</a>
-    </div>
-
-    <div class="card" data-cat="jumbo">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul5-li6d09x8efmrdd.webp">
-      <h3>Legging Panjang Jumbo</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging Panjang Jumbo','Rp24.000 / pcs')">Lihat Detail</a>
-    </div>
-
-    <div class="card" data-cat="anak">
-      <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98x-lvwitejqirla25.webp">
-      <h3>Legging Anak</h3>
-      <a class="btn" href="#product" onclick="showProduct('Legging Anak','Rp21.000 / pcs')">Lihat Detail</a>
-  </div>
-</section>
-
-<!-- PRODUCT DETAIL -->
-<section id="product" class="hidden">
-  <h2>Detail Produk</h2>
-  <div class="grid" style="grid-template-columns:1fr 1fr;align-items:center;">
-    <img id="prodImg" src="">
-    <div>
-      <h3 id="prodName"></h3>
-      <p id="prodPrice"></p>
-      <p>Minimal order: 12 pcs</p>
-      <p>Bahan elastis, adem, nyaman dipakai harian.</p>
-      <a id="waBtn" class="btn">Checkout via WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Testimoni Reseller</h2>
-  <div class="grid">
-    <div class="card">"Barang cepat habis karena kualitasnya bagus!" — Rina</div>
-    <div class="card">"Repeat order terus, admin fast respon." — Ryan</div>
-    <div class="card">"Margin enak buat reseller pemula." — Rey</div>
-  </div>
-</section>
-
-<section>
-  <h2>Alamat Gudang</h2>
-  <p style="text-align:center">Cimanggis, Depok</p>
-  <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d277.4680684867742!2d106.87091879712082!3d-6.379525326262854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb0014ae0423%3A0xe39821fec0c41c53!2swarkop%203R!5e0!3m2!1sid!2sid!4v1766929813962!5m2!1sid!2sid"
-  width="100%" 
-  height="350" 
-  style="border:0; border-radius:16px;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</section>
-
-
-<footer>© 2025 Jo Ondoh — Grosir Legging Depok</footer>
-<a class="floating-wa" href="https://wa.me/6282210776826">Chat WA</a>
-
-<script>
-function filterProduk(cat){
-  document.querySelectorAll('#shop .card').forEach(c=>{
-    c.style.display = (cat==="all"||c.dataset.cat===cat) ? "block":"none";
-  });
-}
-
-function showProduct(name, price){
-  document.getElementById('product').classList.remove('hidden');
-  document.getElementById('prodName').innerText = name;
-  document.getElementById('prodPrice').innerText = price;
-  document.getElementById('prodImg').src = "https://down-id.img.susercontent.com/file/id-11134207-7qukw-li7gic8ln2ij11@resize_w900_nl.webp";
-
-  const msg = encodeURIComponent(`Halo Admin Jo Ondoh, saya mau order ${name} minimal 12 pcs.`);
-  document.getElementById('waBtn').href = "https://wa.me/6282210776826?text="+msg;
-}
-</script>
-
-</body>
-</html>
+    <
